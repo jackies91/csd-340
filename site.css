@@ -13,8 +13,8 @@
 }
 
 h1, h2, h3, h4 {
-    background-color: #ffc8dd; 
-    color: #01161e;
+    background-color: #cce3de; 
+    color: #000814;
     border: 1px solid #D6A800;
     padding: 10px;
 }
@@ -25,10 +25,10 @@ a {
 }
 
 a:hover {
-    color: #bde0fe; 
+    color: #15616d; 
 }
 
 a:visited {
-    color: #a2d2ff; 
+    color: #003566; 
 }
 
