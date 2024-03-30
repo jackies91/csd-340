@@ -13,22 +13,22 @@
 }
 
 h1, h2, h3, h4 {
-    background-color: #FFB6C1; 
-    color: #333;
+    background-color: #ffc8dd; 
+    color: #01161e;
     border: 1px solid #D6A800;
     padding: 10px;
 }
 
 a {
-    color: #D6A800;
+    color: #cdb4db;
     text-decoration: none;
 }
 
 a:hover {
-    color: #888; 
+    color: #bde0fe; 
 }
 
 a:visited {
-    color: #999; 
+    color: #a2d2ff; 
 }
 
