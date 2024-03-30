@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Reddit+Mono&display=swap');
+
+.reddit-mono-html, body {
+    font-family: "Reddit Mono", monospace;
+    font-weight: 400;
+    font-style: normal;
+}
+
+#container {
+    margin-top: 50px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+h1, h2, h3, h4 {
+    background-color: #cce3de; 
+    color: #000814;
+    border: 1px solid #D6A800;
+    padding: 10px;
+}
+
+a {
+    color: #004e98;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #15616d; 
+}
+
+a:visited {
+    color: #4361ee; 
+}
+
