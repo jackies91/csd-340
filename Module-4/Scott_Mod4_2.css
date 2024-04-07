@@ -1,0 +1,53 @@
+/* Jackie Scott Module 4 */
+
+
+* {
+    box-sizing: border-box;
+    background-color:ivory;
+}
+
+h1 {
+    text-align: center;
+    color: blueviolet;
+    background: rgba(192,192,192,0.5);
+}
+
+h3 {
+    text-align: center;
+    color:darkviolet;
+    background: rgba(255,0,255,0.1);;
+
+}
+
+#image-gallery {
+    margin-top: 10%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0px;
+}
+
+img {
+    width: 200px;
+    height: 200px;
+    display: inline-block;
+}
+
+figcaption {
+    font-style: italic;
+    font-size: .75em;
+    color: blue;
+    text-align: center;
+    background-color: rgba(0,255,0,0.2);
+}
+
+
+.column {
+    padding: 5px;
+    border: 1px solid red;
+}
+
+
+.last-div {
+    float: right;
+    margin-bottom: 20px;
+}
