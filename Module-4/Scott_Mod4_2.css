@@ -16,6 +16,7 @@ h3 {
     text-align: center;
     color:darkviolet;
     background: rgba(255,0,255,0.1);;
+    display: inline-block;
 
 }
 
@@ -27,23 +28,30 @@ h3 {
 }
 
 img {
-    width: 200px;
-    height: 200px;
-    display: inline-block;
+    width: 400px;
+    height: 400px;
 }
+
 
 figcaption {
     font-style: italic;
     font-size: .75em;
-    color: blue;
     text-align: center;
+    color: blue;
     background-color: rgba(0,255,0,0.2);
+
 }
 
 
 .column {
     padding: 5px;
     border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    display: inline-block;
+    width: auto;
+    text-align: center;
 }
 
 
