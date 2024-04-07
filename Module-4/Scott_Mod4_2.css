@@ -20,7 +20,7 @@ h3 {
 
 }
 
-#image-gallery {
+image-gallery {
     margin-top: 10%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
