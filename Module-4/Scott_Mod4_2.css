@@ -49,7 +49,6 @@ figcaption {
     display: flex;
     flex-direction: column;
     align-items: center;
-    display: inline-block;
     width: auto;
     text-align: center;
 }
