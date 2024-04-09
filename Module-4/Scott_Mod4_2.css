@@ -49,8 +49,13 @@ figcaption {
     display: flex;
     flex-direction: column;
     align-items: center;
+<<<<<<< HEAD
     display: inline-block;
     width: auto;
+=======
+    width: auto;
+    display: inline-block;
+>>>>>>> 1bea3a48d82020843787299737480e9279925cdf
     text-align: center;
 }
 
