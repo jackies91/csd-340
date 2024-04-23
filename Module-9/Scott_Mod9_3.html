@@ -1,0 +1,67 @@
+<!-- Jackie Scott : Module 9.3 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <link rel="stylesheet" type="text/css" href="Scott_Mod9_3.css">
+    <title>CSD 340 Development with HTML and CSS</title>
+    <meta name="description" content="my first real web Development Assignment">
+    <meta charset="UTF-8">
+    <meta name="author" content="Jackie Scott">
+    <meta name="keywords" content="HTML, CSS">
+
+    <script>
+        var firstVariableValue = "Mexico";
+        var secondVariableValue = "culinary";
+        var thirdVariableValue = "sewist";
+        var fourthVariableValue = "ITSM";
+    </script>
+    
+
+</head>
+
+<body>
+    <div id="container">
+        <h1>Assignment 9.3: JavaScript - Part 1</h1>
+        <h2>Chapter 1: Meet the Author</h2>
+        <p class="intro">My Name is Jackie Scott. I was born in Houston, Texas. I have lived in Houston majority of my life. 
+            I spent a great deal of my childhood living in <span id="Mexico">_____</span>. Spanish is my first language and I did not learn to speak English until the age of nine. 
+        </p>
+        <p>
+            Prior to me working in the IT industry, I went to <span id="culinary">_____</span> school. My culinary training had a focus on French pastries.
+            Sometimes I miss working in a kitchen but then I remember the long hours and suddenly baking at home sounds just as fun.
+            I mostly only bake for fun or special events. My grandpa was a baker his whole life and even owned his own bakery until he retired.
+        </p>
+        <p>
+            I am a very craft person by nature. I am a self taught <span id="sewist">_____</span>. I also taught myself how to use a computerized embroidery machine. 
+            I also taught myself how to create embroidery designs by digitizing images. I felt that my embroider hobby really brought together my
+            love for technology and crafting. 
+        </p>
+        <p>
+            I took an interest in the world of technology thanks to my husband. I would watch him do his homework and found it very interesting. I have an AAS in Networking. 
+            I have never actually worked as a network admin due to the fact that I did not find it as interesting as virtual packet tracer that I did in school. I am now a <span id="ITSM">_____</span> Admin. I have worked in several ticketing systems.
+            This lead me down my current path of learning how to become a software developer.
+        </p>
+        <button type="button"
+        onclick="document.getElementById('Mexico').innerHTML=firstVariableValue">Mexico</button> 
+
+        <button type="button"
+        onclick="document.getElementById('culinary').innerHTML=secondVariableValue">culinary</button>
+
+        <button type="button"
+        onclick="document.getElementById('sewist').innerHTML=thirdVariableValue">sewist</button>
+
+        <button type="button"
+        onclick="document.getElementById('ITSM').innerHTML=fourthVariableValue">ITSM</button>
+
+        <hr>
+        <address>
+           <p><a href="https://www.bellevue.edu/">Bellevue University</a></p>
+            <p>1000 Galvin Road South</p>
+            <p>Bellevue, NE 68005</p>
+        </address>
+
+    </div>
+   
+</body>
+
+</html>
