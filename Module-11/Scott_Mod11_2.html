@@ -1,0 +1,82 @@
+<!-- Jackie Scott : Module 11.2 -->
+<html lang="en">
+    <head>
+        <title>CSD 340 Web Development with HTML and CSS</title>
+
+        <meta charset="UTF-8">
+        <meta name="description" content="HTML Assignment">
+        <meta name="keywords" content="HTML, CSS">
+        <meta name="author" content="Jackie Scott">
+
+        <style>
+            #container {
+                margin-top: 50px;
+                text-align: center;
+            }
+        </style>
+
+    </head>
+
+    <header>
+        <h1>Assignment 11.2: JavaScript - Part 3</h1>
+    </header>
+
+<body>
+    <p>This is an interactive To Do List. Type in your first item in the text box, then click Add. Click the Display button to
+        see current items in the list. Click on Delete Last Entry if you'd like to remove the last entry.
+    </p>
+
+    <div id="container">
+        <input type="text" id="textBox">
+        <button onclick="addTask()">Add</button>
+        <button onclick="deleteLastTask()">Delete Last Entry</button>
+        <button onclick="displayTasks()">Display</button>
+        <hr>
+        <div id="toDo"></div>
+    </div>
+    
+    <script>
+        let tasks = [];
+    
+        function addTask() {
+            const inputBox = document.getElementById("textBox");
+            const task = textBox.value;
+            if (task.trim() !== "") {
+                tasks.push(task);
+                textBox.value = "";
+                const index = tasks.length - 1; // Calculate the index of the added task
+                alert(`Item ${index + 1}: ${task} added at index ${index}`);
+            } else {
+                alert("Enter items to your list!");
+            }
+        }
+    
+        function deleteLastTask() {
+            if (tasks.length === 0) {
+                alert("Nothing to do today!");
+            } else {
+                tasks.pop();
+            }
+        }
+    
+        function displayTasks() {
+            const taskList = document.getElementById("toDo");
+            taskList.innerHTML = "";
+    
+            if (tasks.length === 0) {
+                taskList.innerHTML = "To Do List is empty.";
+            } else {
+                tasks.forEach((task, index) => {
+                    const itemNumber = index + 1;
+                    taskList.innerHTML += `<div>Item ${itemNumber}: ${task}</div>`;
+                });
+            }
+        }
+    </script>
+
+
+
+   
+</body>
+
+</html>
