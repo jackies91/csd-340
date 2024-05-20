@@ -1,0 +1,108 @@
+<!-- Jackie Scott: Assignment 12.2 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="Scott_Mod12_2.css">
+    <title>CSD 340 Web Development with HTML and CSS</title>
+
+    <meta charset="UTF-8">
+    <meta name="description" content="HTML Assignment">
+    <meta name="keywords" content="HTML, CSS">
+    <meta name="author" content="Jackie Scott">
+
+    <style>
+        .side-by-side {
+            vertical-align: top;
+            display: inline-block;
+            margin-right: 20px;
+        }
+
+        .last-div {
+            margin-top: 60px;
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1>Assignment 12.2: JavaScript - Part 4</h1>
+
+        <div class="side-by-side">
+            <h3>Top 10 Favorite Books</h3>
+            <button onclick="displayTopToBottom()">Top to Bottom</button>
+            <button onclick="displayBottomToTop()">Bottom to Top</button>
+            <ol id="book-list">
+                <li>Fight Club</li>
+                <li>Choke</li>
+                <li>Damned</li>
+                <li>A Million Little Pieces</li>
+                <li>Harry Potter and the Deathly Hallows</li>
+                <li>1984</li>
+                <li>Animal Farm</li>
+                <li>Lord of the Flies</li>
+                <li>My Friend Leonard</li>
+                <li>The Good Egg</li>
+            </ol>
+        </div>
+
+        <div class="side-by-side">
+            <h3>5 Things I’ve Learned Since the Course Started</h3>
+            <ul>
+                <li>How to Use GitHub Better</li>
+                <li>How to add in Meta Tags</li>
+                <li>How to style within HTML</li>
+                <li>The Importance of Visual Effects</li>
+                <li>More Patience</li>
+            </ul>
+        </div>
+
+        <div class="last-div">
+            <a href="https://jackies91.github.io/csd-340/">Back to Landing Page</a>
+        </div>
+    </div>
+
+    <script>
+       
+        const books = [
+            "Fight Club",
+            "Choke",
+            "Damned",
+            "A Million Little Pieces",
+            "Harry Potter and the Deathly Hallows",
+            "1984",
+            "Animal Farm",
+            "Lord of the Flies",
+            "My Friend Leonard",
+            "The Good Egg"
+        ];
+
+        
+        function displayTopToBottom() {
+            displayBooks(books);
+        }
+
+        
+        function displayBottomToTop() {
+            displayBooks(books.slice().reverse());
+        }
+
+        
+        function displayBooks(bookArray) {
+            const bookList = document.getElementById('book-list');
+            bookList.innerHTML = ''; 
+
+            bookArray.forEach(book => {
+                const li = document.createElement('li');
+                li.textContent = book;
+                bookList.appendChild(li);
+            });
+        }
+
+
+        document.addEventListener('DOMContentLoaded', () => {
+            displayBooks(books);
+        });
+    </script>
+    
+</body>
+</html>
